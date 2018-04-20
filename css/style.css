@@ -1,0 +1,337 @@
+/*GLOBAL*/
+
+body {
+    font-family: "bodoni 72";
+    box-sizing: border-box;
+}
+
+h2 {
+    font-style: italic;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+#tip {
+    margin-left: 5%;
+}
+
+/*MOBIL START*/
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 120%;
+    }
+
+    #logo {
+        margin: 0px auto;
+        display: block;
+        width: 50%;
+    }
+
+    /*MENU*/
+    nav {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+    }
+
+    .nav {
+        text-align: center;
+        line-height: 70px;
+        color: black;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        text-decoration: none;
+        display: block;
+        background-color: white;
+        border-bottom: 1px solid white;
+        color: black;
+    }
+
+    a:hover {
+        color: hotpink;
+    }
+
+    label {
+        cursor: pointer;
+        margin: 0 40px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        display: block;
+        width: 26px;
+        float: right;
+        margin-top: -5%;
+    }
+
+
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #billede1 {
+        padding-top: 100px;
+    }
+
+    #billede9 {
+        padding-bottom: 5%;
+    }
+
+    h1 {
+        padding-top: 100px;
+        margin-left: 5%;
+    }
+
+    h2 {
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    h3,
+    h4,
+    p {
+        margin-left: 5%;
+    }
+
+
+    #intro {
+        font-style: italic;
+    }
+    
+
+}
+
+/*MOBIL SLUT*/
+
+/*TABLET START*/
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 140%;
+    }
+
+    #logo {
+        width: 40%;
+    }
+
+    /*MENU*/
+    label {
+        display: none;
+    }
+
+    .menu {
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+        line-height: 70px;
+        display: inherit;
+        border-bottom: none;
+        font-size: 100%;
+        padding: 55px;
+        margin: -5%;
+        margin-bottom: 5%;
+    }
+
+    a:hover {
+        color: hotpink;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+
+    /*FORSIDE*/
+    .index-container {
+        text-align: center;
+    }
+
+    #billede4,
+    #billede6 {
+        margin-top: 10%;
+    }
+
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    #intro {
+        margin-left: 5%;
+    }
+
+
+    .del1-container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    /*COCKTAIL*/
+    #over {
+        margin-top: 20%;
+    }
+
+    #over1 {
+        margin-top: 4%;
+    }
+
+    #over2 {
+        margin-top: 6%;
+
+    }
+    #billede7,
+    #billede8,
+    #billede9,
+    #billede10,
+    #billede11,
+    #billede13,
+    #billede14,
+    #billede15,
+    #billede16,
+    #billede12 {
+        margin: 5%;
+    }
+
+
+    /*NATMAD*/
+    #tip1{
+        margin-top: 10%; 
+       }
+    
+    .ryk{
+        margin-top: 5%; 
+    }
+}
+
+/*LAPTOP/DESKTOP*/
+
+@media (min-width: 1024px) {
+
+
+    #logo {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*MENU*/
+    label {
+        display: none;
+    }
+
+    .menu {
+        padding: 0;
+        display: flow-root;
+        text-align: center;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+        line-height: 70px;
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    a:hover {
+        color: hotpink;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+    #toggle {
+        display: none;
+    }
+
+
+    /*FLEXBOX*/
+    .del1-container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    /*FORSIDE*/
+    .index-container {
+        text-align: center;
+    }
+
+    #billede4,
+    #billede6 {
+        margin-top: 10%;
+    }
+
+
+    /*NATMAD*/
+    .dej {
+        margin-top: 5%;
+        margin-left: 1%;
+    }
+    .dej1 {
+        margin-top: 3%;
+    }
+
+    .ryk {
+        margin-top: 5%;
+    }
+
+   
+
+    #tip1 {
+        margin-top: 5%;
+    }
+
+    /*DIY*/
+    #billede16 {
+        margin-left: 5%;
+    }
+    /*COCKTAIL*/
+    #over {
+        margin-top: 20%;
+    }
+
+    #over1 {
+        margin-top: 4%;
+    }
+
+    #over2 {
+        margin-top: 6%;
+
+    }
+}

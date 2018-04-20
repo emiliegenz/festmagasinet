@@ -1,0 +1,4 @@
+<!--SÅ DIN SIDE IKKE BLIVER VIST--> 
+
+User-Agent: *
+Disallow: /
